@@ -27,8 +27,12 @@ app.use express.static(path.join(__dirname, "public"))
 
 app.use express.errorHandler() if 'development' == app.get('env')
 
+#routes 
 app.get "/", index.start
 app.post "/login", login.sendLogin
+
+#Error Messages
+app.get "/login", login.errorMessage  
 
 http.createServer(app).listen app.get('port'), ->
   console.log 'Express server listening on port ' + app.get('port')
