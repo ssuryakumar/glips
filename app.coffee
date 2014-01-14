@@ -1,4 +1,3 @@
-
 express = require 'express';
 routes = require './routes';
 index = require './routes/index';
@@ -36,4 +35,5 @@ app.get "/login", login.errorMessage
 
 http.createServer(app).listen app.get('port'), ->
   console.log 'Express server listening on port ' + app.get('port')
+
 
