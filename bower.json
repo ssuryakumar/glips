@@ -1,10 +1,8 @@
 {
   "name": "glips",
-  "version": "0.0.0",
-  "homepage": "https://github.com/ssuryakumar/glips",
+  "version": "0.0.1",
   "authors": [
-    "Suryakumar <suryakumar@ec.is>"
-  ],
+    "surya <surya091192@gmail.com>" ],
   "license": "MIT",
   "ignore": [
     "**/.*",
@@ -15,5 +13,6 @@
   ],
   "dependencies": {
     "bootstrap": "~3.2.0"
+    "angular": "~1.2.25"
   }
 }
