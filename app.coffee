@@ -4,6 +4,7 @@ index = require './routes/index';
 login = require './routes/login';
 http = require 'http';
 path = require 'path';
+mongoose = require 'mongoose'
 
 app = express();
 
@@ -26,6 +27,23 @@ console.log(path.join(__dirname ,'bower_components'))
 
 app.use express.errorHandler() if 'development' == app.get('env')
 
+#db
+db = mongoose.connection;
+db.on 'error', console.error;
+db.open 'open', ->
+    
+user = new mongoose.Schema(
+  username:
+    type: String
+
+  password: String
+)
+
+User = mongoose.model('User',user)
+@User = User
+app.set 'User', User
+console.log app.get 'User'
+#console.log User
 #routes 
 app.get "/", index.start
 app.post "/login", login.sendLogin
