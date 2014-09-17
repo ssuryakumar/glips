@@ -1,18 +1,11 @@
 {
   "name": "glips",
-  "version": "0.0.1",
+  "version": "0.0.0",
   "authors": [
-    "surya <surya091192@gmail.com>" ],
-  "license": "MIT",
-  "ignore": [
-    "**/.*",
-    "node_modules",
-    "bower_components",
-    "test",
-    "tests"
+    "surya <surya091192@gmail.com>"
   ],
+  "license": "MIT",
   "dependencies": {
-    "bootstrap": "~3.2.0"
     "angular": "~1.2.25"
   }
 }
