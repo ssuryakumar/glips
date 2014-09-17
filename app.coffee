@@ -4,7 +4,6 @@ index = require './routes/index';
 login = require './routes/login';
 http = require 'http';
 path = require 'path';
-stylus = require 'stylus';
 
 app = express();
 
@@ -20,8 +19,9 @@ app.use express.methodOverride()
 app.use express.cookieParser("your secret here")
 app.use express.session()
 app.use app.router
-app.use require("stylus").middleware(path.join(__dirname, "public/css"))
+app.use "/bower_components", express.static(path.join(__dirname, "bower_components"))
 app.use express.static(path.join(__dirname, "public"))
+console.log(path.join(__dirname ,'bower_components'))
 # development only
 
 app.use express.errorHandler() if 'development' == app.get('env')

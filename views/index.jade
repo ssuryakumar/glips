@@ -4,23 +4,23 @@ block content
     h1= title
     p Welcome to #{title}
   
-  .container
-    header#titlebar
-      h2(style="text-align:center;") GeoJSON LOCATION BASED INFORMATION PASSING SYSTEM(GLIPS) surya
-    
-    hr
-    br
-    br
-    .row.col-md-6.col-md-offset-3
-      h3(style="color:white;")
-        span.glyphicon.glyphicon-log-in   LOGIN
-      form(role='form',action='/login',method='POST').form-horizontal.well
-        label(for='name') Username:
-        input(type='text',name='username').form-control
-        label(for='password') Password:
-        input(type='password',name='password').form-control
-        br
-        input(type='submit',name='submit',value='submit').btn.btn-block.btn-primary
+ .container
+  header#titlebar
+   h2(style="text-align:center;") GeoJSON LOCATION BASED INFORMATION PASSING SYSTEM(GLIPS) surya
+ 
+ hr
+ br
+ br
+ .row.col-md-6.col-md-offset-3
+   h3(style="color:white;")
+     span.glyphicon.glyphicon-log-in   LOGIN
+   form(role='form',action='/login',method='POST').form-horizontal.well
+     label(for='name') Username:
+     input(type='text',name='username').form-control
+     label(for='password') Password:
+     input(type='password',name='password').form-control
+     br
+     input(type='submit',name='submit',value='submit').btn.btn-block.btn-primary
       
       
       
