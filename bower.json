@@ -1,0 +1,19 @@
+{
+  "name": "glips",
+  "version": "0.0.0",
+  "homepage": "https://github.com/ssuryakumar/glips",
+  "authors": [
+    "Suryakumar <suryakumar@ec.is>"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "bootstrap": "~3.2.0"
+  }
+}
