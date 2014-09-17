@@ -6,6 +6,8 @@
   ],
   "license": "MIT",
   "dependencies": {
-    "angular": "~1.2.25"
+    "angular": "~1.2.25",
+    "jasmine": "~2.0.4",
+    "angular-ui": "~0.4.0"
   }
 }
