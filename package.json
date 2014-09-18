@@ -6,8 +6,10 @@
     "start": "coffee app.coffee"
   },
   "dependencies": {
+    "coffee-script": "~1.6.3",
     "express": "3.4.7",
     "jade": "*",
-    "coffee-script": "~1.6.3"
+    "mongodb": "^1.4.12",
+    "mongoose": "^3.8.16"
   }
 }
